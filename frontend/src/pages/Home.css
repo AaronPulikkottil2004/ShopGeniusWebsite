@@ -1,0 +1,59 @@
+.home-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.featured-products {
+  margin: 3rem 0;
+}
+
+.featured-products h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #333;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.benefits-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin: 4rem 0;
+  padding: 2rem 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.benefit-card {
+  text-align: center;
+  padding: 1rem;
+}
+
+.benefit-card i {
+  font-size: 2.5rem;
+  color: #6e8efb;
+  margin-bottom: 1rem;
+}
+
+.benefit-card h3 {
+  margin: 0.5rem 0;
+  color: #333;
+}
+
+.benefit-card p {
+  color: #666;
+  margin: 0;
+}

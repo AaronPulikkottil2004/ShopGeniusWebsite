@@ -1,0 +1,127 @@
+.chatbot-container {
+  position: fixed;
+  right: -400px;
+  bottom: 20px;
+  width: 350px;
+  height: 500px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  transition: right 0.3s ease;
+  z-index: 1000;
+}
+
+.chatbot-container.open {
+  right: 20px;
+}
+
+.chatbot-header {
+  padding: 15px;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  color: white;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chatbot-header h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0;
+}
+
+.chatbot-messages {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+  background: #f9f9f9;
+}
+
+.message {
+  margin-bottom: 15px;
+  display: flex;
+}
+
+
+.message.user {
+  justify-content: flex-end;
+}
+
+.message.user .message-content {
+  background: #6e8efb;
+  color: white;
+  border-bottom-right-radius: 5px;
+}
+
+.message.bot {
+  justify-content: flex-start;
+}
+
+.message.bot .message-content {
+  background: #e5e5ea;
+  color: black;
+  border-bottom-left-radius: 5px;
+}
+
+.chatbot-input {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #eee;
+  background: white;
+  border-radius: 0 0 10px 10px;
+}
+
+.chatbot-input input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  outline: none;
+}
+
+.chatbot-input button {
+  margin-left: 10px;
+  padding: 10px 15px;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.chatbot-input button:hover {
+  background: linear-gradient(135deg, #5d7de8, #9666d6);
+}
+
+.message-content {
+  max-width: 80%;
+  padding: 10px 15px;
+  border-radius: 18px;
+  line-height: 1.6;  /* Improved line spacing */
+  word-wrap: break-word;
+  margin-bottom: 8px;
+  white-space: pre-line
+}
+
+.message-content strong {
+  font-weight: bold;
+  color: inherit;
+}
+
+.message-content br {
+  display: block;
+  content: "";
+  margin-bottom: 8px;  /* Space after line breaks */
+}

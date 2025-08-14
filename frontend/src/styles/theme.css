@@ -1,0 +1,15 @@
+:root {
+  --primary: #6366f1;
+  --primary-dark: #4f46e5;
+  --secondary: #10b981;
+  --dark: #1f2937;
+  --light: #f3f4f6;
+}
+
+.dark {
+  --primary: #818cf8;
+  --primary-dark: #6366f1;
+  --secondary: #34d399;
+  --dark: #111827;
+  --light: #1f2937;
+}
